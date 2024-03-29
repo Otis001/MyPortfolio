@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: block;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(92, 75, 183);
+    }
+    
+    .main-container{
+       width: 100%;
+       height: 50px;
+       background-image:linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+       ),url("imagesfolder/1.jpg"); 
+    }
+    
+    .navbar{
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;  
+        margin: 0;
+        padding: 0;
+    }
+    
+    .logo{
+        color: #ff4800;
+        font-size: 35px;
+        font-family: sans-serif;
+    }
+    .image img{
+        width: 100%;
+        background-position: center;
+        background-blend-mode: hard-light;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        background-attachment: fixed;
+        height: 600px;
+    
+    }
+    .navcontent{
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: left;
+    }
+    .navcontent ul{
+        list-style: none;
+        display: inline-flex;
+        margin-right: 20px;
+        padding: 0;
+    }
+    
+    .navcontent ul li{
+        font-size: 1.3em;
+        height: 40px;
+        font-weight: bold;
+        font-family: arial;
+        margin-top: 14px;
+    }
+    .navcontent a{
+        text-decoration: none;
+        padding: 1.2rem;
+        color: #000;
+        transition: 1s ease;
+    }
+    
+    ul li a:hover{
+        color: white;
+    }
+    
+    p{
+        color: #ff7200;
+    }
+    
+    .content{
+        position: absolute;
+        top: 29%;
+        padding-left: 12px;
+        color: white;
+    }
+    
+    h3{
+        font-size: 3.8em;
+        font-weight: bold;
+        
+    }
+    
+    
+</style>
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <div class="icon">
+               <div class="logo">
+                  <i>OumaTech</i>
+               </div>
+               <div class="image">
+                 <img src="imagesfolder/1.jpg" alt="">
+               </div>
+            </div>
+            <div class="navcontent">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="aboutme.html">ABOUT Me</a></li>
+                    <li><a href="projectss.html">PROJECTS</a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="content">
+            <h3>Front-end Developer<br>Let's...<span></span><br>Design,Code & Play!</h3>
+        </div>
+        
+    </div>
+</body>
+</html>
